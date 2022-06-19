@@ -1,1 +1,6 @@
-#### 전체적인 웹 구조를 복습하기 위한 저장소
+Default Project
+
+SpringBoot 2.6.6
+Thymeleaf
+JPA
+Lombok
