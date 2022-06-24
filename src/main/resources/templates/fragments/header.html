@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
-<link rel="stylesheet" type="text/css" th:href="@{/css/fragments/header.css}" />
-<script th:src="@{/js/fragments/header.js}" type="text/javascript"></script>
+    <div th:replace="fragments/head.html :: fragment-head"></div>
 </head>
 
 <div th:fragment="fragment-header">
-
+    <div id="nav">
+        <div class="menu container">
+            <ul>
+                <li> <a th:href="@{/login}"> 로그인 </a></li>
+                <li> 메뉴2 </li>
+            </ul>
+        </div>
+    </div>
 </div>
 
 </html>
