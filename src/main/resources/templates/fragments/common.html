@@ -16,14 +16,37 @@
 </head>
 <body>
     <div th:fragment="fragment-header">
-        <div id="nav">
-            <div class="menu container">
-                <ul>
-                    <li> <a th:href="@{/login}"> 로그인 </a></li>
-                    <li> 메뉴2 </li>
-                </ul>
+        <div id="header" style="background-color:lightgray">
+            <div class="container" id="nav">
+                <div id="m-left">
+                    <ul>
+                        <li>mL1</li>
+                        <li>mL2</li>
+                    </ul>
+                </div>
+                <div id="m-right">
+                    <ul>
+                        <li>mR1</li>
+                        <li id="bt_view_login">로그인</li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+        <div class="login_modal">
+            <!-- 모달 최상위 -->
+            <div class="login_title_text">
+                <div> 로그인 </div>
+            </div>
+            <div class="login_close"><img th:src="@{/images/close.png}">
+            </div>
+            <form id="login_form" action="" method="post">
+                <input type="text" id="id_box" placeholder="아이디">
+                <input type="text" id="pw_box" placeholder="비밀번호">
+                <input type="submit" id="bt_login" value="로그인" />
+            </form>
+        </div>
+        <div class="backon"></div>
     </div>
 
     <div th:fragment="fragment-footer">
