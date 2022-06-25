@@ -32,7 +32,6 @@ body {
 }
 
 #nav ul li {
-    color : lightslategray;
     display : inline-block;
     padding : 20px;
     cursor: pointer;
